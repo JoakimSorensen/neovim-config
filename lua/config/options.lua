@@ -22,9 +22,9 @@ cmd([[
 ]])
 
 opt.backspace = { "eol", "start", "indent" } -- allow backspacing over everything in insert mode
-opt.clipboard = "unnamedplus"              -- allow neovim to access the system clipboard
-vim.opt.fileencoding = "utf-8"             -- the encoding written to a file
-opt.encoding = "utf-8"                     -- the encoding
+opt.clipboard = "unnamedplus"                -- allow neovim to access the system clipboard
+vim.opt.fileencoding = "utf-8"               -- the encoding written to a file
+opt.encoding = "utf-8"                       -- the encoding
 opt.matchpairs = { "(:)", "{:}", "[:]", "<:>" }
 opt.syntax = "enable"
 
@@ -38,11 +38,11 @@ opt.tabstop = indent     -- insert 2 spaces for a tab
 opt.shiftround = true    -- use multiple of shiftwidth when indenting with "<" and ">"
 
 -- search
-opt.hlsearch = true   -- highlight all matches on previous search pattern
-opt.ignorecase = true -- ignore case in search patterns
-opt.smartcase = true  -- smart case
+opt.hlsearch = true    -- highlight all matches on previous search pattern
+opt.ignorecase = false -- ignore case in search patterns
+opt.smartcase = true   -- smart case
 opt.wildignore = opt.wildignore + { "*/node_modules/*", "*/.git/*", "*/vendor/*" }
-opt.wildmenu = true   -- make tab completion for files/buffers act like bash
+opt.wildmenu = true    -- make tab completion for files/buffers act like bash
 
 -- ui
 opt.cursorline = true -- highlight the current line

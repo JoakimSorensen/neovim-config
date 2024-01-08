@@ -37,12 +37,6 @@ vim.keymap.set("n", "<leader>nr", ":NvimTreeRefresh<CR>", {})  -- refresh
 vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFile<CR>", {}) -- search file
 vim.keymap.set("n", "<C-p>", ":NvimTreeFindFile<CR>", {})      -- search file
 
--- Terminal
---vim.keymap.set("n", "<leader>tt", ":NeotermToggle<CR>", {})
-
---------------------------------------------------------------
-------------------- Added by Joakim --------------------------
---------------------------------------------------------------
 -- Terminal buffer (minimal)
 vim.keymap.set("n", "<C-n>", function()
   vim.cmd([[:split term://zsh]])
@@ -51,7 +45,3 @@ end, {})
 -- reset size if in terminal buffer
 vim.keymap.set('t', '<C-n>', [[<C-\><C-O>15<C-w>_<CR>]])
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
---------------------------------------------------------------
---------------------------------------------------------------
---------------------------------------------------------------
--- vim.keymap.set("n", "<leader>tx", ":NeotermExit<CR>", {})
