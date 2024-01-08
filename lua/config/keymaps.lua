@@ -41,6 +41,7 @@ vim.keymap.set("n", "<C-p>", ":NvimTreeFindFile<CR>", {})      -- search file
 vim.keymap.set("n", "<C-n>", function()
   vim.cmd([[:split term://zsh]])
   vim.cmd([[:resize 15<CR>]])
+  vim.cmd('startinsert')
 end, {})
 -- reset size if in terminal buffer
 vim.keymap.set('t', '<C-n>', [[<C-\><C-O>15<C-w>_<CR>]])
